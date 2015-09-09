@@ -1,4 +1,5 @@
-var nips = function();
+var nips = function()
+prompt("wowza");
 {
   var name = prompt("what name faggot");
   if (name.length<=5)
