@@ -1,3 +1,4 @@
+//document.body.innerHTML = "";
 function n() {document.write("<br>");}
 function start()
 {
@@ -5,12 +6,12 @@ function start()
   if (name.length<=3)
   {
     document.write(name+", huh? Nice and short, just how I like it."); n();
-    document.write("People with long names aren't trustworthy, you know.");
+    document.write("People with long names aren't trustworthy, you know.");n();
   }
   else
   {
-    document.write("I could never trust a man with a name that long. I'll call you fig.");
+    document.write("I could never trust a man with a name that long. I'll call you fig.");n();
     name = "fig";
   }
-  document.write("So, "+name+", ");
+  document.write("So, "+name+", ");n();
 }
