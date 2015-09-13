@@ -1,18 +1,19 @@
-//document.body.innerHTML = "";
-function n() {document.write("<br>");}
+function c() {document.body.innerHTML = "";} // clears the screen
+function n() {document.write("<br>");} //makes a new line
 function start()
 {
   var name = prompt("What's your name?");
   if (name.length<=3)
   {
-    document.write(name+", huh? Nice and short, just how I like it."); n();
-    document.write("People with long names aren't trustworthy, you know.");n();
+    document.write("<p>"+name+", huh? Nice and short, just how I like it.</p>");
+    document.write("<p>People with long names aren't trustworthy, you know.</p>");
   }
   else
   {
-    document.write("I could never trust a man with a name that long. I'll call you fig.");n();
+    document.write("<p>I could never trust a man with a name that long. I'll call you fig.</p>");
     name = "fig";
   }
-  document.write("So, "+name+", what do you remember about yourself?");n();
-  document.getElementsByTagName("head")[0].innerHTML = "<title>Intertwined Rooster Genitalia</title>";
+  document.write("<p>So, "+name+", what do you remember about yourself?</p>")
+  document.getElementsByTagName("head")[0].innerHTML = "<title>Intertwined Rooster Genitalia</title>\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">";
 }
