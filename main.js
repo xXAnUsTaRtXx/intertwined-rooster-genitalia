@@ -2,8 +2,11 @@ function c() {document.body.innerHTML = "";} // clears the screen
 function n() {document.write("<br>");} //makes a new line
 //global vars go here
 var firstRun=0;
-var playerName="";
+var playerName=0;
 var career=0;
+var height=0;
+var weight=0;
+var size=0;
 function start()
 {
   playerName = prompt("What's your name?");
@@ -41,11 +44,26 @@ function stats()
       career="Fucktard";
     }
     document.write("<p>You have chosen the career of "+career+".</p>");
+    height = prompt("Enter height in inches.");
+    weight = prompt("Enter your weight in pounds.");
+    if (height>=72 && weight>=180)
+    {
+      size="big guy";
+    }
+    else
+    {
+      size="fuckin\' weakling";
+    }
+    document.write("<p>You\'re a "+size+".</p>");
+    document.write("</div>");
+    document.write("<div class=\"main\">");
+    document.write("<p>Main area test.</p>");
+    document.write("</div>");
     firstRun=2;
   }
   else
   {
     start();
   }
-  document.write("</div>");
+
 }

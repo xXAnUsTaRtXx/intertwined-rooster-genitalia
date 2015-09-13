@@ -7,10 +7,24 @@ p {
 .sidebar {
   float: left;
   width: 250px;
-  padding: 25px;
+  padding: 20px;
   border-style: solid;
   border-left: none;
   border-top: none;
+  border-bottom: none;
+  border-color: #dfdbdb;
+  min-height: 92%;
+}
+
+.main {
+  float: right;
+  margin:10px;
+  margin-top: 60px;
+  width: 73%;
+  padding: 20px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
   border-bottom: none;
   border-color: #dfdbdb;
   min-height: 92%;
