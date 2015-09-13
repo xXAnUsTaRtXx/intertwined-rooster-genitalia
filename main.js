@@ -3,7 +3,7 @@ function n() {document.write("<br>");} //makes a new line
 function start()
 {
   var name = prompt("What's your name?");
-  document.write("<div class=\"start\">");
+  document.write("<div class=\"sidebar\" id=\"start\">");
   if (name.length<=3)
   {
     document.write("<p>"+name+", huh? Nice and short, just how I like it.</p>");

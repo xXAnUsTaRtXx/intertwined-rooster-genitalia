@@ -4,3 +4,14 @@ body {
 p {
   color:#dfdbdb;
 }
+.sidebar {
+  float: left;
+  width: 250px;
+  padding: 25px;
+  border-style: solid;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: #ccc;
+  min-height: 92%;
+}
