@@ -13,5 +13,6 @@ function start()
     document.write("I could never trust a man with a name that long. I'll call you fig.");n();
     name = "fig";
   }
-  document.write("So, "+name+", ");n();
+  document.write("So, "+name+", what do you remember about yourself?");n();
+  document.getElementsByTagName("head")[0].innerHTML = "<title>Intertwined Rooster Genitalia</title>";
 }
