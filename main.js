@@ -25,7 +25,39 @@ function start()
   <link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">";
   document.write("</div>");
   document.write("<div class=\"main\">");
-  document.write("<input type=\"button\" onclick=\"stats()\" value=\"Go to stats page\">");
+  document.write("<input type=\"button\" onclick=\"initialStats()\" value=\"Go to stats page\">");
+  document.write("</div>");
+}
+
+function initialStats()
+{
+  c();
+  document.write("<div class=\"sidebar\">");
+  career = prompt("What was your prior career?");
+  if (career[0]==="P" || career[0]==="p")
+  {
+    alert("Good choice");
+  }
+  else
+  {
+    career="Fucktard";
+  }
+  document.write("<p>You have chosen the career of "+career+".</p>");
+  var height = prompt("Enter height in inches.");
+  var weight = prompt("Enter your weight in pounds.");
+  if (height>=72 && weight>=180)
+  {
+    size="big guy";
+  }
+  else
+  {
+    size="fuckin\' weakling";
+  }
+  document.write("<p>You\'re a "+size+".</p>");
+  document.write("</div>");
+  firstRun=2;
+  document.write("<div class=\"main\">");
+  document.write("<input type=\"button\" onclick=\"stats()\" value=\"Continue\">");
   document.write("</div>");
 }
 
@@ -33,44 +65,18 @@ function stats()
 {
   c();
   document.write("<div class=\"sidebar\">");
-  if (firstRun===1)
-  {
-    career = prompt("What was your prior career?");
-    if (career[0]==="P" || career[0]==="p")
-    {
-      alert("Good choice");
-    }
-    else
-    {
-      career="Fucktard";
-    }
-    document.write("<p>You have chosen the career of "+career+".</p>");
-    var height = prompt("Enter height in inches.");
-    var weight = prompt("Enter your weight in pounds.");
-    if (height>=72 && weight>=180)
-    {
-      size="big guy";
-    }
-    else
-    {
-      size="fuckin\' weakling";
-    }
-    document.write("<p>You\'re a "+size+".</p>");
-    document.write("</div>");
-    document.write("<div class=\"main\">");
-    document.write("<input type=\"button\" onclick=\"resetStats()\" value=\"Reset your stats\">");
-    document.write("</div>");
-    firstRun=2;
-  }
-  else
-  {
-    start();
-  }
+  document.write("<p>Your current stats are as follows</p>");
+  document.write("<p>Career: "+career+".</p>");
+  document.write("<p>Size: "+size+".</p>");
+  document.write("</div>");
+  document.write("<div class=\"main\">");
+  document.write("<input type=\"button\" onclick=\"resetStats()\" value=\"Reset your stats\">");
+  document.write("</div>");
 }
+
 function resetStats()
 {
-  firstRun=1;
   career=0;
   size=0;
-  stats();
+  initialStats();
 }
