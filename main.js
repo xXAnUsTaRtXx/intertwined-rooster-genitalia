@@ -4,8 +4,6 @@ function n() {document.write("<br>");} //makes a new line
 var firstRun=0;
 var playerName=0;
 var career=0;
-var height=0;
-var weight=0;
 var size=0;
 function start()
 {
@@ -23,7 +21,10 @@ function start()
   }
   document.write("<p>So, "+playerName+", what do you remember about yourself?</p>");
   firstRun=1;
-  document.getElementsByTagName("head")[0].innerHTML = "<title>Intertwined Rooster Genitalia</title><link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">";
+  document.getElementsByTagName("head")[0].innerHTML = "<title>Intertwined Rooster Genitalia</title>\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">";
+  document.write("</div>");
+  document.write("<div class=\"main\">");
   document.write("<input type=\"button\" onclick=\"stats()\" value=\"Go to stats page\">");
   document.write("</div>");
 }
@@ -44,8 +45,8 @@ function stats()
       career="Fucktard";
     }
     document.write("<p>You have chosen the career of "+career+".</p>");
-    height = prompt("Enter height in inches.");
-    weight = prompt("Enter your weight in pounds.");
+    var height = prompt("Enter height in inches.");
+    var weight = prompt("Enter your weight in pounds.");
     if (height>=72 && weight>=180)
     {
       size="big guy";
@@ -57,7 +58,7 @@ function stats()
     document.write("<p>You\'re a "+size+".</p>");
     document.write("</div>");
     document.write("<div class=\"main\">");
-    document.write("<p>Main area test.</p>");
+    document.write("<input type=\"button\" onclick=\"resetStats()\" value=\"Reset your stats\">");
     document.write("</div>");
     firstRun=2;
   }
@@ -65,5 +66,11 @@ function stats()
   {
     start();
   }
-
+}
+function resetStats()
+{
+  firstRun=1;
+  career=0;
+  size=0;
+  stats();
 }
