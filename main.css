@@ -19,7 +19,7 @@ p {
 .main {
   float: right;
   margin:10px;
-  margin-top: 60px;
+  margin-top: 0px;
   width: 73%;
   padding: 20px;
   border-style: solid;
@@ -27,5 +27,17 @@ p {
   border-right: none;
   border-bottom: none;
   border-color: #dfdbdb;
-  min-height: 92%;
+}
+.header {
+float:right;
+width:76.5%;
+}
+.header p {
+  margin-bottom: 3px;
+  margin-top: 29px;
+}
+a:link, a:visited, a:hover, a:active {
+  color:#dfdbdb;
+  text-decoration: none;
+  font-size: 19;
 }

@@ -7,7 +7,11 @@ var career=0;
 var size=0;
 function start()
 {
+  c();
   playerName = prompt("What's your name?");
+  document.write("<div class=\"header\">");
+  document.write("<p>Cock</p>");
+  document.write("</div>");
   document.write("<div class=\"sidebar\" id=\"start\">");
   if (playerName.length<=3)
   {
@@ -32,6 +36,9 @@ function start()
 function initialStats()
 {
   c();
+  document.write("<div class=\"header\">");
+  document.write("<p>Cock</p>");
+  document.write("</div>");
   document.write("<div class=\"sidebar\">");
   career = prompt("What was your prior career?");
   if (career[0]==="P" || career[0]==="p")
@@ -64,6 +71,9 @@ function initialStats()
 function stats()
 {
   c();
+  document.write("<div class=\"header\">");
+  document.write("<p>Cock</p>");
+  document.write("</div>");
   document.write("<div class=\"sidebar\">");
   document.write("<p>Your current stats are as follows</p>");
   document.write("<p>Career: "+career+".</p>");
